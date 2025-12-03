@@ -1,0 +1,194 @@
+* {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --palette-blue: rgb(25, 116, 168);
+    --palette-orange: rgb(243, 168, 29);
+    --palette-light-gray: rgb(230, 230, 230);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Border radius */
+
+.rounded {
+    border-radius: 10px;
+}
+
+/* Display */
+
+.d-flex {
+    display: flex;
+}
+
+.d-table {
+    display: table;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-none {
+    display: none;
+}
+
+/* Alignment */
+
+.align-left {
+    margin-right: auto;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Text size */
+
+.text-small {
+    font-size: 15px;
+}
+
+.text-medium {
+    font-size: 20px;
+}
+
+.text-large {
+    font-size: 45px;
+}
+
+.text-header {
+    font-size: 80px;
+}
+
+/* Banner */
+
+.banner {
+    background-color: var(--palette-blue);
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 7px 30px black;
+}
+
+.banner__logo {
+    width: 100px;
+    height: 100px;
+}
+
+.banner__cart {
+    width: 100px;
+    height: 100px;
+}
+
+.banner__link:hover {
+    color: var(--palette-orange);
+    text-decoration: underline;
+}
+
+.banner__product {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.banner__product {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Products */
+
+.product-card {
+    width: 300px;
+    height: 600px;
+    
+    background-color: white;
+    
+    text-align: center;
+    
+    color: black;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 67px;
+
+    box-shadow: 0px 7px 30px black;
+}
+
+.product-card__display-image {
+    width: 300px;
+    height: 300px;
+}
+
+.product-card__description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-card:hover {
+    animation-name: product-fill-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes product-fill-hover {
+    from {
+        background-color: white;
+        color: black;
+    }
+    to {
+        background-color: var(--palette-blue);
+        color: white;
+    }
+}
+
+/* Buy buttons */
+
+.product-purchase {
+    width: 300px;
+    height: 50px;
+    
+    background-color: var(--palette-blue);
+    
+    color: white;
+    text-align: center;
+    
+    justify-content: space-around;
+    padding: 20px;
+    margin: 67px;
+
+    box-shadow: 0px 7px 30px black;
+}
+
+.product-purchase:hover {
+    animation-name: purchase-fill-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes purchase-fill-hover {
+    from {
+        background-color: var(--palette-blue);
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-top: 70px;
+}
